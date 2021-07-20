@@ -4,6 +4,8 @@ A short arcade style game with captcha elements as you help the computer turrets
 
 🕹️  **Play Here**: [sevendeadlyfins.itch.io/aim-assist](https://sevendeadlyfins.itch.io/aim-assist)
 
+![aim-assist-gameplay](https://user-images.githubusercontent.com/15265859/126342583-c1ff73b2-31f4-458d-96a6-7accbb7ac69c.gif)
+
 ---
 
 ### Development and Acknowledgements:
