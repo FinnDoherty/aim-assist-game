@@ -15,6 +15,10 @@ Theme: "You have to look for it!"
 
 Art assets by [kenney.nl](https://kenney.nl/assets) with my own modifications and backgrounds
 
+Fonts by [kenney.nl](https://kenney.nl/assets/kenney-fonts): 
+ - Kenney Blocks
+ - Keney Future Narrow
+
 Sound effects by [kenney.nl](https://kenney.nl/assets)
 
 Music from [opengameart.org cc0 music](https://opengameart.org/content/cc0-music-0):
