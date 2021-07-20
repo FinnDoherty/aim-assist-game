@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Logisector Intro.mp3-d69675171b76209cf2180fb25c6d3041.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Logisector Intro.mp3"
+dest_files=[ "res://.import/Logisector Intro.mp3-d69675171b76209cf2180fb25c6d3041.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

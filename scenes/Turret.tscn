@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/art/turret_shoot_anim.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/turret button.png" type="Texture" id=2]
+[ext_resource path="res://scripts/Turret.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 24.7965, 15.0474 )
+
+[sub_resource type="Animation" id=1]
+resource_name = "shoot"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("turret:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.4, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 0 ]
+}
+
+[node name="Turret" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="turret" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 4
+
+[node name="button" type="Sprite" parent="."]
+position = Vector2( 0, 72.5 )
+texture = ExtResource( 2 )
+hframes = 2
+
+[node name="area" type="Area2D" parent="button"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="button/area"]
+position = Vector2( -0.374573, 2.99661 )
+shape = SubResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/shoot = SubResource( 1 )
+
+[connection signal="body_entered" from="button/area" to="." method="_on_area_body_entered"]
+[connection signal="body_exited" from="button/area" to="." method="_on_area_body_exited"]

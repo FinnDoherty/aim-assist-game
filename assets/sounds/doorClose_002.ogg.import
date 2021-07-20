@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/doorClose_002.ogg-78f5fc1f7c71fe6125f1e09b7ab6c2d7.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/doorClose_002.ogg"
+dest_files=[ "res://.import/doorClose_002.ogg-78f5fc1f7c71fe6125f1e09b7ab6c2d7.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
